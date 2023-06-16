@@ -1,0 +1,5 @@
+@import url('../src/vendor/root.css');
+@import url('../src/vendor/fonts/Montserrat/Montserrat.css');
+@import url('./vendor/normalize.css');
+@import url('../src/components/Header/Header.css');
+@import url('../src/components/Intro/Intro.css');
