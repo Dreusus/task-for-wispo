@@ -1,4 +1,5 @@
 import React from "react";
+
 import logo from '../../images/logo.svg';
 import logoTitle from '../../images/logo-title.svg';
 import logoSubtitle from '../../images/logo-subtitle.svg';
@@ -45,22 +46,22 @@ const Header = () => {
           <button className="header__button">
             <img src={apple} alt="Кнопка каталог" className="header__button-image" />
             <span className="header__button-text">Ремонт Apple</span>
-            <img src={arrow} alt="arrow" />
+            <img src={arrow} alt="arrow" className="header__button-arrow" />
           </button>
           <button className="header__button">
             <img src={smartphone} alt="Кнопка каталог" className="header__button-image" />
             <span className="header__button-text">Ремонт смартфонов</span>
-            <img src={arrow} alt="arrow" />
+            <img src={arrow} alt="arrow" className="header__button-arrow" />
           </button>
           <button className="header__button">
             <img src={tablet} alt="Кнопка каталог" className="header__button-image" />
             <span className="header__button-text">Ремонт планшетов</span>
-            <img src={arrow} alt="arrow" />
+            <img src={arrow} alt="arrow" className="header__button-arrow" />
           </button>
           <button className="header__button">
             <img src={laptop} alt="Кнопка каталог" className="header__button-image" />
             <span className="header__button-text">Ремонт ноутбуков</span>
-            <img src={arrow} alt="arrow" />
+            <img src={arrow} alt="arrow" className="header__button-arrow" />
           </button>
 
         </nav>

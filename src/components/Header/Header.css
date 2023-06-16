@@ -17,7 +17,7 @@
 
 .header__container-down {
   display: flex;
-  max-height: 60px;
+  height: 60px;
 }
 
 .header__logo {
@@ -42,7 +42,6 @@
 }
 
 .header__navigation-links {
-
   max-height: 22px;
   margin-left: 44px;
   margin-right: auto;
@@ -90,7 +89,6 @@
 .header__contact-title {
   position: relative;
   margin: 0;
-
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -169,13 +167,13 @@
 .header__button:nth-child(2) {
   width: 189px;
   margin: 0 57px;
-  padding: 0 10px 0 13px;
+  padding: 0 0 0 13px;
 }
 
 .header__button:nth-child(3) {
   width: 245px;
   margin: 0 57px;
-  padding: 0 10px 0 16px;
+  padding: 0 0 0 16px;
 }
 
 .header__button:nth-child(4) {
@@ -186,13 +184,13 @@
 .header__button:nth-child(4) {
   width: 228px;
   margin: 0 57px;
-  padding: 0 10px 0 15px;
+  padding: 0;
 }
 
 .header__button:nth-child(5) {
   width: 228px;
   margin: 0 0 0 57px;
-  padding: 0 10px;
+  padding: 0;
 }
 
 .header__button:not(:last-child)::after {

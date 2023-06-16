@@ -1,12 +1,167 @@
-.intro {
-  display: flex;
-  flex-direction: column;
-  max-width: 1920px;
-  height: 835px;
-  padding: 0 200px;
-  margin: 0 auto;
-  background-image: url('../../images/crash-mobiles.png');
-  background-repeat: no-repeat;
-  background-position: calc(100% - 200px) center;
-  
-}
+ @font-face {
+   font-family: 'Proxima Nova';
+   font-weight: 700;
+   font-style: normal;
+   src: url('../../vendor/fonts/ProximaNova/ProximaNova-Bold.woff2') format('woff2'),
+     url('../../vendor/fonts/ProximaNova/ProximaNova-Bold.woff') format('woff')
+ }
+
+ .intro {
+   display: flex;
+   flex-direction: column;
+   max-width: 1920px;
+   height: 835px;
+   margin: 0 auto;
+   position: relative;
+   background: rgba(0, 0, 0, 0.05);
+ }
+
+ .intro::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 30px;
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+   transform: matrix(1, 0, 0, -1, 0, 0);
+ }
+
+ .intro__graphics {
+   width: 806px;
+   height: 835px;
+   background-image: url('../../images/crash-mobiles.png');
+   background-repeat: no-repeat;
+   background-position: right bottom;
+   position: absolute;
+   right: 0;
+   top: 0;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+ }
+
+ .repair-count {
+   display: flex;
+   align-items: center;
+   width: 464px;
+   height: 101px;
+   background: white;
+   border-radius: 100px;
+   margin-bottom: 100px;
+ }
+
+ .repair-count__number {
+   font-family: 'Proxima Nova';
+   font-size: 50px;
+   font-weight: 700;
+   line-height: 61px;
+   letter-spacing: 0em;
+   background: linear-gradient(270deg, #FFCC00 0%, #FFA300 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   margin: auto 10px auto 40px;
+ }
+
+ .repair-count__emoji {
+   width: 60px;
+   height: 60px;
+   margin: auto 10px auto 0;
+ }
+
+ .repair-count__text {
+   display: block;
+   width: 151px;
+   height: 48px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 120%;
+ }
+
+ .service-info__title {
+   width: 816px;
+   height: 80px;
+   font-style: normal;
+   font-weight: 800;
+   font-size: 80px;
+   line-height: 100%;
+   color: #000000;
+   margin: 120px 94px 60px 200px;
+ }
+
+ .service--info__description {
+   width: 673px;
+   height: 93px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 26px;
+   line-height: 120%;
+   margin: 0 237px 0 200px;
+ }
+
+ .diagnoctics {
+   display: flex;
+   margin: 60px 0 40px 200px;
+   background-image: url('../../images/deagnoctics.svg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding: 0;
+   height: 79px;
+   width: 412px;
+   border: none;
+ }
+
+ .diagnoctics__text {
+   margin-top: 33px;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 120%;
+   color: #FFFFFF;
+ }
+
+ .diagnoctics__arrow {
+   margin: 33px 15px 0 60px;
+ }
+
+ .adventages {
+   display: flex;
+   gap: 30px;
+   width: 818px;
+   flex-wrap: wrap;
+   margin-left: 200px;
+ }
+
+ .adventage {
+   width: 394px;
+   height: 70px;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   align-items: center;
+ }
+
+ .adventage__image {
+   box-sizing: border-box;
+   padding: 10px;
+   margin-right: 20px;
+   width: 70px;
+   height: 70px;
+   box-shadow: 0px 10px 30px -6px rgba(35, 25, 4, 0.15);
+   border-radius: 10px;
+ }
+
+ .adventage:nth-child(3) .adventage__image {
+   padding: 30px;
+ }
+
+ .adventage__title {
+   width: 302px;
+   height: 48px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 24px;
+   color: #000000;
+ }
