@@ -8,21 +8,20 @@ import cloud__small from '../../images/cloud__small.svg'
 import cloud__medium from '../../images/cloud__medium.svg'
 import cloud__big from '../../images/cloud__big.svg'
 
-const SpecialistOverview = () => {
+const Team = () => {
   return (
-    <section className="specialistOverview">
-
-      <h1 className="specialistOverview__title">
-        <span className="specialistOverview__titleText">Ремонт осуществляется <br />первоклассными специалистами</span>
+    <section className="team">
+      <h1 className="team__title">
+        <span className="team__titleText">Ремонт осуществляется <br />первоклассными специалистами</span>
       </h1>
 
-      <p className="specialistOverview__subtitle">
-        <span className="specialistOverview__subtitleText">
+      <p className="team__subtitle">
+        <span className="team__subtitleText">
           Средний опыт работы наших мастеров 4 года
         </span>
       </p>
 
-      <div className="specialistOverview__cards">
+      <div className="team__cards">
 
         <div className="card">
           <img src={avatar__ilya} alt="Аватар мастера" className="card__image" />
@@ -90,4 +89,4 @@ const SpecialistOverview = () => {
   )
 }
 
-export default SpecialistOverview;
+export default Team;

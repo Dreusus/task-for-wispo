@@ -3,4 +3,6 @@
 @import url('../src/vendor/root.css');
 @import url('../src/components/Header/Header.css');
 @import url('../src/components/Intro/Intro.css');
-@import url('../src/components/SpecialistOverview/SpecialistOverview.css')
+@import url('../src/components/Team/Team.css');
+@import url('../src/components/Separation/Separation.css');
+@import url('../src/components/Locations/Locations.css');
