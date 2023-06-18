@@ -342,16 +342,18 @@
   .team__cards {
     width: 100%;
   }
+
   .team__cards .card:last-child {
     display: flex;
     width: 242px;
     height: 471px;
-    margin:0 auto;
+    margin: 0 auto;
   }
 
   .team__cards::before {
     width: 0;
   }
+
   .team__cards::after {
     width: 0;
   }
@@ -364,15 +366,15 @@
     border-radius: 300px;
     box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.05);
     border: 1px solid #E5E5E5;
-    background-image: url('../../images/arrow-left.svg');
+    background-image: url('../../images/svg/arrow-left.svg');
     background-repeat: no-repeat;
     background-position: center;
     left: -35px;
     top: 50%;
     transform: translateY(-50%);
   }
-  
-  
+
+
   .card::after {
     position: absolute;
     content: '';
@@ -381,7 +383,7 @@
     border-radius: 300px;
     box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.05);
     border: 1px solid #E5E5E5;
-    background-image: url('../../images/arrow-left.svg');
+    background-image: url('../../images/svg/arrow-left.svg');
     background-repeat: no-repeat;
     background-position: center;
     right: -35px;
