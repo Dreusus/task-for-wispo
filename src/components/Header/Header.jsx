@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 
 import logo from '../../images/logo.svg';
 import logoTitle from '../../images/logo-title.svg';
@@ -10,6 +10,19 @@ import laptop from '../../images/laptop.svg'
 import arrow from '../../images/arrow-down.svg'
 import tablet from '../../images/tablet.svg'
 const Header = () => {
+
+  const [windowSize, setWindowSize] = useState(window.innerWidth)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize(window.innerWidth);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <header className="header">
       <div className="header__container-up">
@@ -37,35 +50,43 @@ const Header = () => {
         </div>
 
       </div>
-      <div className="header__container-down">
+      {windowSize > 700 ? <div className="header__container-down">
         <nav className="header__buttons">
           <button className="header__button">
             <img src={catalog} alt="Кнопка каталог" className="header__button-image" />
             <span className="header__button-text">Каталог</span>
+            <div className="header__button-separator"></div>
           </button>
           <button className="header__button">
             <img src={apple} alt="Кнопка каталог" className="header__button-image" />
             <span className="header__button-text">Ремонт Apple</span>
             <img src={arrow} alt="arrow" className="header__button-arrow" />
+            <div className="header__button-separator"></div>
           </button>
           <button className="header__button">
             <img src={smartphone} alt="Кнопка каталог" className="header__button-image" />
             <span className="header__button-text">Ремонт смартфонов</span>
             <img src={arrow} alt="arrow" className="header__button-arrow" />
+            <div className="header__button-separator"></div>
           </button>
           <button className="header__button">
             <img src={tablet} alt="Кнопка каталог" className="header__button-image" />
             <span className="header__button-text">Ремонт планшетов</span>
             <img src={arrow} alt="arrow" className="header__button-arrow" />
+            <div className="header__button-separator"></div>
           </button>
           <button className="header__button">
             <img src={laptop} alt="Кнопка каталог" className="header__button-image" />
             <span className="header__button-text">Ремонт ноутбуков</span>
             <img src={arrow} alt="arrow" className="header__button-arrow" />
           </button>
-
         </nav>
-      </div>
+      </div> :
+        <div className='header__container-mobile'>
+          <button className="header__burger"></button>
+          <button className="header__call-connect">Связаться</button>
+        </div>}
+
 
     </header>
   )

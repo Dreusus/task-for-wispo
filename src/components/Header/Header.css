@@ -18,6 +18,7 @@
 .header__container-down {
   display: flex;
   height: 60px;
+
 }
 
 .header__logo {
@@ -146,77 +147,188 @@
 
 .header__buttons {
   display: flex;
-  margin-top: 17px;
+  margin: 17px 0 10px;
 }
 
 .header__button {
   padding: 0;
   border: none;
-  background-color: white;
   display: flex;
   align-items: center;
-  height: 26px;
-  position: relative;
+  margin: 0 57px 0 0;
+  background-color: white;
 }
 
-.header__button:nth-child(1) {
-  width: 103px;
-  margin-right: 57px;
-}
-
-.header__button:nth-child(2) {
-  width: 189px;
-  margin: 0 57px;
-  padding: 0 0 0 13px;
-}
-
-.header__button:nth-child(3) {
-  width: 245px;
-  margin: 0 57px;
-  padding: 0 0 0 16px;
-}
-
-.header__button:nth-child(4) {
-  width: 235px;
-  margin: 0 57px;
-}
-
-.header__button:nth-child(4) {
-  width: 228px;
-  margin: 0 57px;
-  padding: 0;
-}
-
-.header__button:nth-child(5) {
-  width: 228px;
-  margin: 0 0 0 57px;
-  padding: 0;
-}
-
-.header__button:not(:last-child)::after {
-  content: "";
-  width: 1px;
-  height: 26px;
-  position: absolute;
-  right: -57px;
-  top: 0;
-  background-color: #F0F2F4;
-}
-
-
-.header__button-image {
-  width: 26px;
-  height: 26px;
-  margin-right: 10px;
+.header__button {
+  margin: 0;
 }
 
 .header__button-text {
-  font-style: normal;
+  margin: 0 10px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  color: #000000;
+  white-space: nowrap;
 }
 
-.header__button-text:not(:first-child) {
-  margin-right: 10px;
+.header__button:first-child .header__button-text {
+  margin: 0 0 0 10px;
+}
+
+.header__button-separator {
+  width: 1px;
+  height: 26px;
+  background-color: #F0F2F4;
+  margin: 0 57px;
+}
+
+
+.header__button:last-child .header__button-separator {
+  margin: 0 0 0 57px;
+}
+
+@media screen and (max-width:1500px) {
+  .header {
+    padding: 0 144px;
+    max-width: 1080px;
+  }
+}
+
+@media screen and (max-width:1767px) {
+
+  .header__button:first-child .header__button-separator {
+    width: 1px;
+    height: 15px;
+    background-color: #F0F2F4;
+    margin: 0 27px;
+  }
+
+  .header__navigation-links {
+    display: none;
+  }
+
+  .header__button:last-child .header__button-separator {
+    margin: 0;
+  }
+
+  .header__button-separator {
+    width: 0;
+    height: 0;
+    margin: 0 27px 0 0;
+  }
+}
+
+@media screen and (max-width:1330px) {
+  .header__button:last-child {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width:1130px) {
+  .header {
+    padding: 0 87px;
+  }
+
+  .header__logo {
+    margin-top: 15px;
+  }
+
+  .header__contact-title {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .header__contact-number {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+}
+
+@media screen and (max-width:1020px) {
+  .header__buttons {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+  }
+
+  .header {
+    padding: 0 57px;
+  }
+
+  .header__button:first-child .header__button-text {
+    display: none;
+  }
+
+  .header__button-arrow {
+    display: none;
+  }
+
+  .header__button-text {
+    font-size: 14px;
+  }
+
+  .header__button-separator {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .header {
+    padding: 0 24px;
+  }
+
+  .header__logo-title {
+    width: 147px;
+    height: 18px;
+  }
+
+  .header__logo-subtitle {
+    display: none;
+  }
+
+  .header__contact-title {
+    display: none;
+  }
+
+  .header__contact-number {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .header__contact-number::before {
+    width: 0;
+    height: 0;
+  }
+}
+
+.header__container-mobile {
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.header__burger {
+  background-image: url('../../images/burger.svg');
+  width: 34px;
+  height: 19px;
+  border: none;
+  background-color: #fff;
+  margin: auto 0;
+}
+
+.header__call-connect {
+  width: 106px;
+  height: 32px;
+  border: none;
+  background: linear-gradient(270deg, #FFCC00 0%, #FFA300 100%);
+  border-radius: 70px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
 }
