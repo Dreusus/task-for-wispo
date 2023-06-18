@@ -1,27 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import useWindowSize from '../../utils/useWindowSize'
+import {
+  logo,
+  logoTitle,
+  logoSubtitle,
+  catalog,
+  apple,
+  smartphone,
+  laptop,
+  arrow,
+  tablet
+} from '../../images/svg/svg';
 
-import logo from '../../images/logo.svg';
-import logoTitle from '../../images/logo-title.svg';
-import logoSubtitle from '../../images/logo-subtitle.svg';
-import catalog from '../../images/catalog.svg';
-import apple from '../../images/apple.svg';
-import smartphone from '../../images/smartphone.svg'
-import laptop from '../../images/laptop.svg'
-import arrow from '../../images/arrow-down.svg'
-import tablet from '../../images/tablet.svg'
 const Header = () => {
 
-  const [windowSize, setWindowSize] = useState(window.innerWidth)
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowSize(window.innerWidth);
-    };
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  const windowSize = useWindowSize()
 
   return (
     <header className="header">

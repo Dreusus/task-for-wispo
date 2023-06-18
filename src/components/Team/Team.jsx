@@ -1,26 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import avatar__ilya from '../../images/avatar__ilya.png';
-import avatar__alex from '../../images/avatar__alex.png';
-import avatar__andrey from '../../images/avatar__andrey.png';
-import avatar__dmitriy from '../../images/avatar__dmitriy.png';
-import doneJobs from '../../images/doneJobs.svg';
-import cloud__small from '../../images/cloud__small.svg'
-import cloud__medium from '../../images/cloud__medium.svg'
-import cloud__big from '../../images/cloud__big.svg'
+import React from 'react';
+import useWindowSize from '../../utils/useWindowSize';
+import {
+  avatar__ilya,
+  avatar__alex,
+  avatar__andrey,
+  avatar__dmitriy
+} from '../../images/png/png';
+import {
+  doneJobs,
+  cloud__small,
+  cloud__medium,
+  cloud__big
+} from '../../images/svg/svg';
 
 const Team = () => {
+  const windowSize = useWindowSize()
 
-  const [windowSize, setWindowSize] = useState(window.innerWidth)
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowSize(window.innerWidth);
-    };
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
   return (
     <section className="team">
       <h1 className="team__title">

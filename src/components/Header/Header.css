@@ -74,7 +74,7 @@
   display: inline-block;
   width: 14px;
   height: 14px;
-  background-image: url('../../images/star.svg');
+  background-image: url('../../images/svg/star.svg');
   background-size: cover;
   background-position: center;
   margin-right: 9px;
@@ -110,7 +110,7 @@
   transform: translateY(-50%);
   width: 10px;
   height: 10px;
-  background: url('../../images/ellipse-big.svg') center/cover;
+  background: url('../../images/svg/ellipse-big.svg') center/cover;
 }
 
 .header__contact-title span::after {
@@ -122,7 +122,7 @@
   transform: translateY(-50%);
   width: 6px;
   height: 6px;
-  background: url('../../images/ellipse-small.svg') center/cover;
+  background: url('../../images/svg/ellipse-small.svg') center/cover;
 }
 
 .header__contact-number {
@@ -139,7 +139,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url('../../images/phone.svg');
+  background-image: url('../../images/svg/phone.svg');
   background-size: cover;
   background-position: center;
   margin-right: 5px;
@@ -312,7 +312,7 @@
 }
 
 .header__burger {
-  background-image: url('../../images/burger.svg');
+  background-image: url('../../images/svg/burger.svg');
   width: 34px;
   height: 19px;
   border: none;

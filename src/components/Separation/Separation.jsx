@@ -1,21 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import useWindowSize from '../../utils/useWindowSize'
+import {
+  circle__big,
+  circle__small
+} from '../../images/svg/svg';
 
-import circle__big from '../../images/circle__big.svg'
-import circle__small from '../../images/circle__small.svg';
 const Separation = () => {
-
-  const [windowSize, setWindowSize] = useState(window.innerWidth)
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowSize(window.innerWidth);
-    };
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
+  const windowSize = useWindowSize()
+  
   return (
     <div className="separation">
       <img src={circle__big} alt="круг" className="separation__image_size_big" />

@@ -29,7 +29,7 @@
  .intro__graphics {
    width: 806px;
    height: 835px;
-   background-image: url('../../images/crash-mobiles.png');
+   background-image: url('../../images/png/crash-mobiles.png');
    background-repeat: no-repeat;
    background-position: right bottom;
    position: absolute;
@@ -104,7 +104,7 @@
  .diagnoctics {
    display: flex;
    margin: 60px 0 40px 200px;
-   background-image: url('../../images/deagnoctics.svg');
+   background-image: url('../../images/svg/deagnoctics.svg');
    background-size: cover;
    background-repeat: no-repeat;
    padding: 0;

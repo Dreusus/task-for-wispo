@@ -1,7 +1,10 @@
 import React from "react";
-import location__one from '../../images/location_1.png'
-import location__two from '../../images/location_2.png'
-import location__three from '../../images/location_3.png'
+import {
+  location__one,
+  location__two,
+  location__three
+} from '../../images/png/png';
+
 const Location = () => {
   return (
     <section className="location">

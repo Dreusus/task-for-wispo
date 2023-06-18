@@ -1,23 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import emoji from '../../images/emoji.png'
-import arrowRight from '../../images/arrow-right.svg'
-import screwDriver from '../../images/screwdriver.svg'
-import guard from '../../images/guard.svg'
-import magnifier from '../../images/magnifier.svg'
-import bb from '../../images/bb.svg'
+import React from 'react';
+import useWindowSize from '../../utils/useWindowSize'
+import { emoji } from '../../images/png/png';
+import {
+  arrowRight,
+  screwDriver,
+  guard,
+  magnifier,
+  bb
+} from '../../images/svg/svg';
+
 const Intro = () => {
 
-  const [windowSize, setWindowSize] = useState(window.innerWidth)
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowSize(window.innerWidth);
-    };
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  const windowSize = useWindowSize()
 
   return (
     <section className="intro">
@@ -68,12 +62,12 @@ const Intro = () => {
           <span className="adventage__title">Бесплатная диагностика даже при отказе от ремонта</span>
         </ul>
       </li>
-       
-       {windowSize > 700 ? "" : <div className="repair-count">
-          <span className="repair-count__number">12 585</span>
-          <img src={emoji} alt="emoji" className="repair-count__emoji" />
-          <span className="repair-count__text">Выполненных ремонтов</span>
-        </div>}
+
+      {windowSize > 700 ? "" : <div className="repair-count">
+        <span className="repair-count__number">12 585</span>
+        <img src={emoji} alt="emoji" className="repair-count__emoji" />
+        <span className="repair-count__text">Выполненных ремонтов</span>
+      </div>}
 
 
     </section>
