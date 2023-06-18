@@ -4,7 +4,7 @@ import Intro from './components/Intro/Intro'
 import Team from './components/Team/Team'
 import Separation from './components/Separation/Separation'
 import Location from './components/Locations/Locations'
-
+import ColoredBlocks from './components/ColoredBlocks/ColoredBlocks'
 function App() {
   return (
     <>
@@ -13,6 +13,7 @@ function App() {
       <Team />
       <Separation />
       <Location />
+      <ColoredBlocks/>
     </>
   )
 }

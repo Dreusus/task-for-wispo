@@ -5,6 +5,7 @@ import {
   location__three
 } from '../../images/png/png';
 
+
 const Location = () => {
   return (
     <section className="location">
