@@ -397,7 +397,7 @@
 
    .diagnoctics {
      width: 327px;
-     height:64px;
+     height: 64px;
      margin: 0 auto 20px;
    }
 
@@ -407,7 +407,7 @@
      flex-direction: row;
      flex-wrap: wrap;
      gap: 16px;
-     margin:0 auto;
+     margin: 0 auto;
    }
 
    .adventage {
@@ -432,3 +432,17 @@
    }
  }
 
+ @media screen and (max-width:500px) {
+   .intro {
+     margin-top: 20px;
+   }
+
+   .diagnoctics__text {
+     margin-top: 7px;
+   }
+
+   .diagnoctics__arrow {
+     margin-top: 5px;
+   }
+
+ }

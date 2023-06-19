@@ -78,7 +78,8 @@ const Header = () => {
         <div className='header__container-mobile'>
           <button className="header__burger"></button>
           <button className="header__call-connect">Связаться</button>
-        </div>}
+        </div>
+        }
 
 
     </header>

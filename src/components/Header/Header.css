@@ -308,7 +308,8 @@
   height: 32px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  align-items: center;
+  
 }
 
 .header__burger {
@@ -331,4 +332,11 @@
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
+}
+
+@media screen and (max-width:500px) {
+  .header__container-up {
+    border-bottom: none;
+  }
+  
 }
