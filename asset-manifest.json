@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/task-for-wispo/static/css/main.f0adbb3e.css",
+    "main.css": "/task-for-wispo/static/css/main.d2f574a7.css",
     "main.js": "/task-for-wispo/static/js/main.90a8ffc3.js",
     "static/media/location_1.png": "/task-for-wispo/static/media/location_1.53e39c2b8d6361a7f9f3.png",
     "static/media/location_2.png": "/task-for-wispo/static/media/location_2.3f934779f1c7c8ed0cfb.png",
@@ -112,11 +112,11 @@
     "static/media/arrow-left.svg": "/task-for-wispo/static/media/arrow-left.0fcbe67c6b4a08982d4b.svg",
     "static/media/circle__small.svg": "/task-for-wispo/static/media/circle__small.85ca650e795a4066a0b0da2a69f93a44.svg",
     "static/media/ellipse-small.svg": "/task-for-wispo/static/media/ellipse-small.e97c0874f3fdaf3d73e0.svg",
-    "main.f0adbb3e.css.map": "/task-for-wispo/static/css/main.f0adbb3e.css.map",
+    "main.d2f574a7.css.map": "/task-for-wispo/static/css/main.d2f574a7.css.map",
     "main.90a8ffc3.js.map": "/task-for-wispo/static/js/main.90a8ffc3.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0adbb3e.css",
+    "static/css/main.d2f574a7.css",
     "static/js/main.90a8ffc3.js"
   ]
 }
